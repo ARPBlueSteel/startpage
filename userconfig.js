@@ -18,12 +18,15 @@ const default_config = {
   search: {
     engines: {
       g: ["https://google.com/search?q=", "Google"],
+      d: ["https://duckduckgo.com/html?q=", "DuckDuckGo"],
       y: ["https://youtube.com/results?search_query=", "Youtube"],
       r: ["https://www.reddit.com/search/?q=", "Reddit"],
+      p: ["https://www.pinterest.es/search/pins/?q=", "Pinterest"],
     },
   },
   keybindings: {
     "s": "search-bar",
+    "q": "config-tab",
   },
   disabled: ['weather-forecast'],
   localIcons: false,
@@ -31,11 +34,17 @@ const default_config = {
   openLastVisitedTab: true,
   tabs: [
     {
-      name: "home",
+      name: "chi ll",
       background_url: "src/img/banners/cbg-2.gif",
       categories: [{
         name: "Social Media",
         links: [
+          {
+            name: "whatsapp",
+            url: "https://web.whatsapp.com/",
+            icon: "brand-whatsapp",
+            icon_color: "var(--ctp-green)",
+          },
           {
             name: "reddit",
             url: "https://www.reddit.com/",
@@ -55,6 +64,12 @@ const default_config = {
             icon_color: "var(--ctp-mauve)",
           },
           {
+            name: "last.fm",
+            url: "https://www.last.fm/",
+            icon: "brand-lastfm",
+            icon_color: "var(--ctp-red)",
+          },
+          {
             name: "instagram",
             url: "https://www.instagram.com/",
             icon: "brand-instagram",
@@ -63,18 +78,7 @@ const default_config = {
         ],
       },
       {
-        name: "Biology",
-        links: [
-          {
-            name: "reddit",
-            url: "https://www.reddit.com/",
-            icon: "brand-reddit",
-            icon_color: "var(--ctp-peach)",
-          },
-        ],
-      },
-      {
-        name: "Tools",
+        name: "Games",
         links: [
           {
             name: "monkeytype",
@@ -109,7 +113,7 @@ const default_config = {
       ],
     },
     {
-      name: "school",
+      name: "med",
       background_url: "src/img/banners/cbg-7.gif",
       categories: [
         {
