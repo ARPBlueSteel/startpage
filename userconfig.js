@@ -1,7 +1,7 @@
 let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 
 const default_config = {
-  overrideStorage: true,
+  overrideStorage: false,
   temperature: {
     location: 'Matão, São Paulo',
     scale: "C",
