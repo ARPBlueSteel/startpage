@@ -40,19 +40,7 @@ const default_config = {
             name: "reddit",
             url: "https://www.reddit.com/",
             icon: "brand-reddit",
-            icon_color: "var(--ctp-peach)",
-          },
-          {
-            name: "youtube",
-            url: "https://www.youtube.com/",
-            icon: "brand-youtube-filled",
-            icon_color: "var(--ctp-red)",
-          },
-          {
-            name: "twitch",
-            url: "https://www.twitch.tv/",
-            icon: "brand-twitch",
-            icon_color: "var(--ctp-mauve)",
+            icon_color: "var(--ctp-maroon)",
           },
           {
             name: "instagram",
@@ -60,39 +48,75 @@ const default_config = {
             icon: "brand-instagram",
             icon_color: "var(--ctp-pink)",
           },
-        ],
-      },
-      {
-        name: "Biology",
-        links: [
           {
-            name: "reddit",
+            name: "x",
+            url: "https://twitter.com/home",
+            icon: "brand-twitter",
+            icon_color: "var(--ctp-sapphire)",
+          },
+          {
+            name: "discord",
             url: "https://www.reddit.com/",
-            icon: "brand-reddit",
-            icon_color: "var(--ctp-peach)",
+            icon: "brand-discord",
+            icon_color: "var(--ctp-lavender)",
           },
         ],
       },
       {
-        name: "Tools",
+        name: "Emails",
         links: [
           {
-            name: "monkeytype",
-            url: "https://monkeytype.com/",
-            icon: "keyboard",
+          name: "leonidas",
+          url: "https://mail.google.com/mail/u/0/#inbox",
+          icon: "mail",
+          icon_color: "var(--ctp-peach)",
+          },
+          {
+            name: "ethan.yu217",
+            url: "https://mail.google.com/mail/u/5/#inbox",
+            icon: "mail-plus",
+            icon_color: "var(--ctp-green)",
+          },
+          {
+            name: "muhanyu",
+            url: "https://mail.google.com/mail/u/1/#inbox",
+            icon: "mail-star",
+            icon_color: "var(--ctp-yellow)",
+          },
+          {
+            name: "glitchy",
+            url: "https://mail.google.com/mail/u/2/#inbox",
+            icon: "trash",
+            icon_color: "var(--ctp-lavender)",
+          },
+          {
+            name: "fujimori",
+            url: "https://mail.google.com/mail/u/3/#inbox",
+            icon: "trash",
+            icon_color: "var(--ctp-lavender)",
+          },
+        ],
+      },
+      {
+        name: "Music",
+        links: [
+          {
+            name: "soundcloud",
+            url: "https://soundcloud.com/discover",
+            icon: "brand-soundcloud",
             icon_color: "var(--ctp-peach)",
           },
           {
-            name: "tetris",
-            url: "https://tetr.io",
-            icon: "brand-apple-arcade",
+            name: "yt music",
+            url: "https://music.youtube.com/",
+            icon: "vinyl",
             icon_color: "var(--ctp-red)",
           },
-        ],
+        ], 
       }, ],
     },
     {
-      name: "dev",
+      name: "Hobby",
       background_url: "src/img/banners/cbg-7.gif",
       categories: [
         {
@@ -104,6 +128,35 @@ const default_config = {
               icon: "brand-github",
               icon_color: "var(--ctp-mauve)",
             },
+            {
+              name: "sacabambaspis",
+              url: "https://github.com/ARPBlueSteel/sacabambaspis",
+              icon: "brand-github",
+              icon_color: "var(--ctp-mauve)",
+            },
+          ],
+        },
+        {
+          name: "UTAUs/Voice Synth",
+          links: [
+            {
+              name: "Hatsune Mikeru",
+              url: "https://github.com/ARPBlueSteel/hastune-mikeru",
+              icon: "microphone-2",
+              icon_color: "var(--ctp-sapphire)",
+            },
+            {
+              name: "ki-uta",
+              url: "https://github.com/ARPBlueSteel/ki-uta-vb",
+              icon: "microphone-2",
+              icon_color: "var(--ctp-rosewater)",
+            },
+            {
+              name: "UTAUForum",
+              url: "https://utaforum.net/",
+              icon: "music",
+              icon_color: "var(--ctp-mauve)",
+            },           
           ],
         },
       ],
@@ -116,22 +169,16 @@ const default_config = {
           name: "anki",
           links: [
             {
-              name: "r/anki",
-              url: "https://reddit.com/r/anki",
-              icon: "brand-reddit",
-              icon_color: "var(--ctp-peach)",
-            },
-            {
-              name: "anki decks",
+              name: "deck search",
               url: "https://ankiweb.net/shared/decks/",
               icon: "star-filled",
-              icon_color: "var(--ctp-blue)",
+              icon_color: "var(--ctp-sapphire)",
             },
             {
-              name: "anking",
-              url: "https://www.youtube.com/@AnKingMed",
-              icon: "crown",
-              icon_color: "var(--ctp-yellow)",
+              name: "my decks",
+              url: "https://ankiweb.net/decks",
+              icon: "star-filled",
+              icon_color: "var(--ctp-blue)",
             },
           ],
         },
@@ -142,19 +189,59 @@ const default_config = {
       background_url: "src/img/banners/cbg-9.gif",
       categories: [
         {
-          name: "anime",
+          name: "weeb",
           links: [
             {
-              name: "anilist",
-              url: "https://anilist.co/home",
+              name: "mal",
+              url: "https://myanimelist.net/profile/StolenAzure",
               icon: "letter-a",
               icon_color: "var(--ctp-blue)",
             },
+          ],
+        },
+        {
+          name: "games",
+          links: [
             {
-              name: "anichart",
-              url: "https://anilist.net",
-              icon: "letter-a",
-              icon_color: "var(--ctp-teal)",
+              name: "tetr.io",
+              url: "https://tetr.io",
+              icon: "square-number-4",
+              icon_color: "var(--ctp-red)",
+            },
+            {
+              name: "steam",
+              url: "https://monkeytype.com/",
+              icon: "brand-steam",
+              icon_color: "var(--ctp-lavender)",
+            },
+            {
+              name: "itch.io",
+              url: "https://itch.io/",
+              icon: "brand-itch",
+              icon_color: "var(--ctp-peach)",
+            },
+            {
+              name: "monkeytype",
+              url: "https://monkeytype.com/",
+              icon: "keyboard",
+              icon_color: "var(--ctp-peach)",
+            },
+          ],
+        },
+        {
+          name: "watch",
+          links: [
+            {
+              name: "youtube",
+              url: "https://www.youtube.com/",
+              icon: "brand-youtube-filled",
+              icon_color: "var(--ctp-red)",
+            },
+            {
+              name: "twitch",
+              url: "https://www.twitch.tv/",
+              icon: "brand-twitch",
+              icon_color: "var(--ctp-mauve)",
             },
           ],
         },
