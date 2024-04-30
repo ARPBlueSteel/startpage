@@ -117,7 +117,7 @@ const default_config = {
     },
     {
       name: "Hobby",
-      background_url: "src/img/banners/cbg-7.gif",
+      background_url: "src/img/banners/cbg-4.gif",
       categories: [
         {
           name: "repositories",
@@ -163,7 +163,7 @@ const default_config = {
     },
     {
       name: "school",
-      background_url: "src/img/banners/cbg-7.gif",
+      background_url: "src/img/banners/cbg-6.gif",
       categories: [
         {
           name: "anki",
@@ -186,7 +186,7 @@ const default_config = {
     },
     {
       name: "Media",
-      background_url: "src/img/banners/cbg-9.gif",
+      background_url: "src/img/banners/cbg-10.gif",
       categories: [
         {
           name: "weeb",
