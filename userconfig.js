@@ -66,7 +66,7 @@ const default_config = {
         name: "Emails",
         links: [
           {
-          name: "leonidas",
+          name: "leoni",
           url: "https://mail.google.com/mail/u/0/#inbox",
           icon: "mail",
           icon_color: "var(--ctp-peach)",
