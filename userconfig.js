@@ -28,7 +28,7 @@ const default_config = {
   disabled: ['weather-forecast'],
   localIcons: false,
   fastlink: "https://google.com",
-  openLastVisitedTab: true,
+  openLastVisitedTab: false,
   tabs: [
     {
       name: "home",
@@ -176,6 +176,29 @@ const default_config = {
             },
             {
               name: "my decks",
+              url: "https://ankiweb.net/decks",
+              icon: "star-filled",
+              icon_color: "var(--ctp-blue)",
+            },
+          ],
+        },
+        {
+          name: "tools",
+          links: [
+            {
+              name: "desmos",
+              url: "https://ankiweb.net/shared/decks/",
+              icon: "star-filled",
+              icon_color: "var(--ctp-sapphire)",
+            },
+            {
+              name: "managebac",
+              url: "https://ankiweb.net/decks",
+              icon: "star-filled",
+              icon_color: "var(--ctp-blue)",
+            },
+            {
+              name: "wolfram alpha",
               url: "https://ankiweb.net/decks",
               icon: "star-filled",
               icon_color: "var(--ctp-blue)",
