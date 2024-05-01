@@ -25,7 +25,6 @@ const default_config = {
   keybindings: {
     "s": "search-bar",
   },
-  disabled: ['weather-forecast'],
   localIcons: false,
   fastlink: "https://google.com",
   openLastVisitedTab: false,
@@ -63,7 +62,7 @@ const default_config = {
         ],
       },
       {
-        name: "Emails",
+        name: "email",
         links: [
           {
           name: "leoni",
@@ -72,7 +71,7 @@ const default_config = {
           icon_color: "var(--ctp-peach)",
           },
           {
-            name: "ethan.yu217",
+            name: "ethan.217",
             url: "https://mail.google.com/mail/u/5/#inbox",
             icon: "mail-plus",
             icon_color: "var(--ctp-green)",
@@ -98,19 +97,37 @@ const default_config = {
         ],
       },
       {
-        name: "Music",
+        name: "google",
         links: [
           {
-            name: "soundcloud",
-            url: "https://soundcloud.com/discover",
-            icon: "brand-soundcloud",
+            name: "docs",
+            url: "https://docs.google.com/document/u/0/",
+            icon: "file-text",
+            icon_color: "var(--ctp-teal)",
+          },
+          {
+            name: "slides",
+            url: "https://docs.google.com/presentation/u/0/",
+            icon: "presentation-analytics",
+            icon_color: "var(--ctp-yellow)",
+          },
+          {
+            name: "sheets",
+            url: "https://docs.google.com/spreadsheets/u/0/",
+            icon: "table",
+            icon_color: "var(--ctp-green)",
+          },
+          {
+            name: "drive",
+            url: "https://drive.google.com/drive/u/0/home",
+            icon: "brand-google-drive",
             icon_color: "var(--ctp-peach)",
           },
           {
-            name: "yt music",
-            url: "https://music.youtube.com/",
-            icon: "vinyl",
-            icon_color: "var(--ctp-red)",
+            name: "forms",
+            url: "https://docs.google.com/forms/u/0/",
+            icon: "list-details",
+            icon_color: "var(--ctp-mauve)",
           },
         ], 
       }, ],
@@ -159,6 +176,35 @@ const default_config = {
             },           
           ],
         },
+        {
+          name: "Personal Organization",
+          links: [
+            {
+              name: "obsidian_docs",
+              url: "https://help.obsidian.md/Home",
+              icon: "markdown",
+              icon_color: "var(--ctp-mauve)",
+            },
+            {
+              name: "obsidian_repo",
+              url: "https://github.com/ARPBlueSteel/station-n-1",
+              icon: "database-import",
+              icon_color: "var(--ctp-red)",
+            },
+            {
+              name: "obsidian_forum",
+              url: "https://forum.obsidian.md/",
+              icon: "messages",
+              icon_color: "var(--ctp-mauve)",
+            },
+            {
+              name: "notion calendar",
+              url: "https://calendar.notion.so",
+              icon: "brand-notion",
+              icon_color: "var(--ctp-rosewater)",
+            },
+          ],
+        },
       ],
     },
     {
@@ -183,25 +229,37 @@ const default_config = {
           ],
         },
         {
-          name: "tools",
+          name: "school",
           links: [
             {
               name: "desmos",
-              url: "https://ankiweb.net/shared/decks/",
-              icon: "star-filled",
-              icon_color: "var(--ctp-sapphire)",
+              url: "https://www.desmos.com/calculator",
+              icon: "math-integral-x",
+              icon_color: "var(--ctp-green)",
             },
             {
               name: "managebac",
-              url: "https://ankiweb.net/decks",
-              icon: "star-filled",
+              url: "https://rss.managebac.com/login",
+              icon: "school",
               icon_color: "var(--ctp-blue)",
             },
             {
               name: "wolfram alpha",
-              url: "https://ankiweb.net/decks",
-              icon: "star-filled",
-              icon_color: "var(--ctp-blue)",
+              url: "https://wolfreealpha.gitlab.io/input/",
+              icon: "alpha",
+              icon_color: "var(--ctp-peach)",
+            },
+            {
+              name: "msteams",
+              url: "https://teams.microsoft.com/v2/",
+              icon: "brand-teams",
+              icon_color: "var(--ctp-lavender)",
+            },
+            {
+              name: "phind",
+              url: "https://www.phind.com/",
+              icon: "message-search",
+              icon_color: "var(--ctp-rosewater)",
             },
           ],
         },
@@ -212,13 +270,19 @@ const default_config = {
       background_url: "src/img/banners/cbg-10.gif",
       categories: [
         {
-          name: "weeb",
+          name: "music",
           links: [
             {
-              name: "mal",
-              url: "https://myanimelist.net/profile/StolenAzure",
-              icon: "letter-a",
-              icon_color: "var(--ctp-blue)",
+              name: "soundcloud",
+              url: "https://soundcloud.com/discover",
+              icon: "brand-soundcloud",
+              icon_color: "var(--ctp-peach)",
+            },
+            {
+              name: "yt music",
+              url: "https://music.youtube.com/",
+              icon: "vinyl",
+              icon_color: "var(--ctp-red)",
             },
           ],
         },
@@ -265,6 +329,18 @@ const default_config = {
               url: "https://www.twitch.tv/",
               icon: "brand-twitch",
               icon_color: "var(--ctp-mauve)",
+            },
+            {
+              name: "aniwave",
+              url: "https://aniwave.to/home",
+              icon: "letter-a",
+              icon_color: "var(--ctp-red)",
+            },
+            {
+              name: "mal",
+              url: "https://myanimelist.net/profile/StolenAzure",
+              icon: "letter-a",
+              icon_color: "var(--ctp-blue)",
             },
           ],
         },
