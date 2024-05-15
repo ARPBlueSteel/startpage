@@ -72,13 +72,13 @@ const default_config = {
           },
           {
             name: "ethan.217",
-            url: "https://mail.google.com/mail/u/5/#inbox",
+            url: "https://mail.google.com/mail/u/1/#inbox",
             icon: "mail-plus",
             icon_color: "var(--ctp-green)",
           },
           {
             name: "muhanyu",
-            url: "https://mail.google.com/mail/u/1/#inbox",
+            url: "https://mail.google.com/mail/u/3/#inbox",
             icon: "mail-star",
             icon_color: "var(--ctp-yellow)",
           },
@@ -90,7 +90,7 @@ const default_config = {
           },
           {
             name: "fujimori",
-            url: "https://mail.google.com/mail/u/3/#inbox",
+            url: "https://mail.google.com/mail/u/4/#inbox",
             icon: "trash",
             icon_color: "var(--ctp-lavender)",
           },
