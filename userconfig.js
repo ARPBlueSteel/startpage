@@ -238,7 +238,13 @@ const default_config = {
               icon_color: "var(--ctp-green)",
             },
             {
-              name: "managebac",
+              name: "canvas",
+              url: "https://canvas.ubc.ca/",
+              icon: "school",
+              icon_color: "var(--ctp-blue)",
+            },
+            {
+              name: "piazza",
               url: "https://rss.managebac.com/login",
               icon: "school",
               icon_color: "var(--ctp-blue)",
