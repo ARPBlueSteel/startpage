@@ -3,7 +3,7 @@ let saved_config = JSON.parse(localStorage.getItem("CONFIG"));
 const default_config = {
   overrideStorage: true,
   temperature: {
-    location: 'Matão, São Paulo',
+    location: 'Vancouver, Canada',
     scale: "C",
   },
   clock: {
@@ -36,62 +36,15 @@ const default_config = {
         name: "Social Media",
         links: [
           {
-            name: "reddit",
-            url: "https://www.reddit.com/",
-            icon: "brand-reddit",
-            icon_color: "var(--ctp-maroon)",
-          },
-          {
             name: "instagram",
             url: "https://www.instagram.com/",
             icon: "brand-instagram",
             icon_color: "var(--ctp-pink)",
           },
           {
-            name: "x",
-            url: "https://twitter.com/home",
-            icon: "brand-twitter",
-            icon_color: "var(--ctp-sapphire)",
-          },
-          {
             name: "discord",
             url: "https://www.reddit.com/",
             icon: "brand-discord",
-            icon_color: "var(--ctp-lavender)",
-          },
-        ],
-      },
-      {
-        name: "email",
-        links: [
-          {
-          name: "leoni",
-          url: "https://mail.google.com/mail/u/0/#inbox",
-          icon: "mail",
-          icon_color: "var(--ctp-peach)",
-          },
-          {
-            name: "ethan.217",
-            url: "https://mail.google.com/mail/u/1/#inbox",
-            icon: "mail-plus",
-            icon_color: "var(--ctp-green)",
-          },
-          {
-            name: "muhanyu",
-            url: "https://mail.google.com/mail/u/3/#inbox",
-            icon: "mail-star",
-            icon_color: "var(--ctp-yellow)",
-          },
-          {
-            name: "glitchy",
-            url: "https://mail.google.com/mail/u/2/#inbox",
-            icon: "trash",
-            icon_color: "var(--ctp-lavender)",
-          },
-          {
-            name: "fujimori",
-            url: "https://mail.google.com/mail/u/4/#inbox",
-            icon: "trash",
             icon_color: "var(--ctp-lavender)",
           },
         ],
@@ -106,9 +59,9 @@ const default_config = {
             icon_color: "var(--ctp-teal)",
           },
           {
-            name: "slides",
-            url: "https://docs.google.com/presentation/u/0/",
-            icon: "presentation-analytics",
+            name: "gmail",
+            url: "https://mail.google.com/mail/u/0/#inbox",
+            icon: "mail",
             icon_color: "var(--ctp-yellow)",
           },
           {
@@ -123,36 +76,43 @@ const default_config = {
             icon: "brand-google-drive",
             icon_color: "var(--ctp-peach)",
           },
-          {
-            name: "forms",
-            url: "https://docs.google.com/forms/u/0/",
-            icon: "list-details",
-            icon_color: "var(--ctp-mauve)",
-          },
         ], 
-      }, ],
+      },
+      {
+        name: "school",
+        links: [
+          {
+            name: "desmos",
+            url: "https://www.desmos.com/calculator",
+            icon: "math-integral-x",
+            icon_color: "var(--ctp-green)",
+          },
+          {
+            name: "canvas",
+            url: "https://canvas.ubc.ca/",
+            icon: "school",
+            icon_color: "var(--ctp-blue)",
+          },
+          {
+            name: "piazza",
+            url: "https://piazza.com/",
+            icon: "messages",
+            icon_color: "var(--ctp-blue)",
+          },
+          {
+            name: "wolfram alpha",
+            url: "https://www.wolframalpha.com/",
+            icon: "alpha",
+            icon_color: "var(--ctp-peach)",
+          },
+        ],
+      },
+     ],
     },
     {
       name: "Hobby",
       background_url: "src/img/banners/cbg-4.gif",
       categories: [
-        {
-          name: "repositories",
-          links: [
-            {
-              name: "github",
-              url: "https://github.com/",
-              icon: "brand-github",
-              icon_color: "var(--ctp-mauve)",
-            },
-            {
-              name: "sacabambaspis",
-              url: "https://github.com/ARPBlueSteel/sacabambaspis",
-              icon: "brand-github",
-              icon_color: "var(--ctp-mauve)",
-            },
-          ],
-        },
         {
           name: "UTAUs/Voice Synth",
           links: [
@@ -173,29 +133,29 @@ const default_config = {
               url: "https://utaforum.net/",
               icon: "music",
               icon_color: "var(--ctp-mauve)",
-            },           
+            },
+            {
+              name: "MakeDiffsinger",
+              url: "https://github.com/openvpi/MakeDiffSinger/wiki",
+              icon: "robot",
+              icon_color: "var(--ctp-sky)",
+            },
+            {
+              name: "utaformatix",
+              url: "https://sdercolin.github.io/utaformatix3/",
+              icon: "transform",
+              icon_color: "var(--ctp-peach)",              
+            }            
           ],
         },
         {
           name: "Personal Organization",
           links: [
             {
-              name: "obsidian_docs",
-              url: "https://help.obsidian.md/Home",
-              icon: "markdown",
-              icon_color: "var(--ctp-mauve)",
-            },
-            {
               name: "obsidian_repo",
               url: "https://github.com/ARPBlueSteel/station-n-1",
               icon: "database-import",
               icon_color: "var(--ctp-red)",
-            },
-            {
-              name: "obsidian_forum",
-              url: "https://forum.obsidian.md/",
-              icon: "messages",
-              icon_color: "var(--ctp-mauve)",
             },
             {
               name: "notion calendar",
@@ -208,64 +168,52 @@ const default_config = {
       ],
     },
     {
-      name: "school",
+      name: "Tools",
       background_url: "src/img/banners/cbg-6.gif",
       categories: [
         {
-          name: "anki",
+          name: "Research & Writing",
           links: [
             {
-              name: "deck search",
-              url: "https://ankiweb.net/shared/decks/",
-              icon: "star-filled",
+              name: "phind",
+              url: "https://www.phind.com/search?home=true",
+              icon: "adjustments-search",
               icon_color: "var(--ctp-sapphire)",
             },
             {
-              name: "my decks",
-              url: "https://ankiweb.net/decks",
-              icon: "star-filled",
-              icon_color: "var(--ctp-blue)",
+              name: "jstor",
+              url: "https://www.jstor.org/",
+              icon: "file-search",
+              icon_color: "var(--ctp-maroon)",
+            },
+            {
+              name: "anna's archive",
+              url: "https://www.jstor.org/",
+              icon: "archive",
+              icon_color: "var(--ctp-pink)",
+            },
+            {
+              name: "ubc library",
+              url: "https://www.library.ubc.ca/",
+              icon: "books",
+              icon_color: "var(--ctp-yellow)",
             },
           ],
         },
         {
-          name: "school",
+          name: "ubc stuff",
           links: [
             {
-              name: "desmos",
-              url: "https://www.desmos.com/calculator",
-              icon: "math-integral-x",
-              icon_color: "var(--ctp-green)",
+              name: "nutrislice",
+              url: "https://ubc.nutrislice.com/",
+              icon: "carrot",
+              icon_color: "var(--ctp-flamingo)",
             },
             {
-              name: "canvas",
-              url: "https://canvas.ubc.ca/",
-              icon: "school",
+              name: "workday student",
+              url: "wd10.myworkday.com/ubc/d/home.htmld",
+              icon: "briefcase-2",
               icon_color: "var(--ctp-blue)",
-            },
-            {
-              name: "piazza",
-              url: "https://rss.managebac.com/login",
-              icon: "school",
-              icon_color: "var(--ctp-blue)",
-            },
-            {
-              name: "wolfram alpha",
-              url: "https://wolfreealpha.gitlab.io/input/",
-              icon: "alpha",
-              icon_color: "var(--ctp-peach)",
-            },
-            {
-              name: "msteams",
-              url: "https://teams.microsoft.com/v2/",
-              icon: "brand-teams",
-              icon_color: "var(--ctp-lavender)",
-            },
-            {
-              name: "phind",
-              url: "https://www.phind.com/",
-              icon: "message-search",
-              icon_color: "var(--ctp-rosewater)",
             },
           ],
         },
