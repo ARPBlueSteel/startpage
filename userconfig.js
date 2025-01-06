@@ -188,7 +188,7 @@ const default_config = {
             },
             {
               name: "anna's archive",
-              url: "https://www.jstor.org/",
+              url: "https://annas-archive.org/",
               icon: "archive",
               icon_color: "var(--ctp-pink)",
             },
