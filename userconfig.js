@@ -211,7 +211,7 @@ const default_config = {
             },
             {
               name: "workday student",
-              url: "wd10.myworkday.com/ubc/d/home.htmld",
+              url: "http://myworkday.ubc.ca/",
               icon: "briefcase-2",
               icon_color: "var(--ctp-blue)",
             },
@@ -285,8 +285,8 @@ const default_config = {
               icon_color: "var(--ctp-mauve)",
             },
             {
-              name: "aniwave",
-              url: "https://aniwave.to/home",
+              name: "anime streaming",
+              url: "https://fmhy.net/videopiracyguide#anime-streaming",
               icon: "letter-a",
               icon_color: "var(--ctp-red)",
             },
